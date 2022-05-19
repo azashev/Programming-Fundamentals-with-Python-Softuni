@@ -20,7 +20,6 @@ copy_guess_list = guess_list.copy()
 
 correct_guessed_numbers = []
 consecutive_correct_guesses = 0
-max_consecutive_correct_guesses = 0
 total_consecutive_correct_guesses = 0
 points = 0
 prize = 0
