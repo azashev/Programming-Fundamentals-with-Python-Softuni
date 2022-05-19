@@ -1,5 +1,4 @@
 import random
-from math import floor
 
 initial_jackpot = 100000
 bonus_jackpot = 0
