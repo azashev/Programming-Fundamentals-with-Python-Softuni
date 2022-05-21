@@ -6,6 +6,6 @@ counter = 0
 
 for word in words:
     if word in string.lower():
-        counter += string.lower().count(word.lower())
+        counter += string.lower().count(word)
 
 print(counter)
