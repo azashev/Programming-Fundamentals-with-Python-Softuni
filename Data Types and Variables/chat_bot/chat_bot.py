@@ -9,7 +9,7 @@ pairs = [
       "that! If you still want me to send you a song, tell a joke, or suggest a movie, then please enter 'song', "
                                                                                                 "'joke' or 'movie'"]],
 
-    ["(sad|not well|not ok|not okay|disappointed|dissappointed|disapointed|dissapointed|angry|drunk)",
+    ["(sad|not well|not ok|not okay|disappointed|dissappointed|disapointed|dissapointed|angry|drunk|bored)",
      ["I'm really sorry to hear that. Do you want me to send you a song to cheer you up? If you do, then please type "
       "'song'. \nIf you want me to tell you a joke, or suggest a movie, then simply type 'joke' or 'movie'"]],
 
