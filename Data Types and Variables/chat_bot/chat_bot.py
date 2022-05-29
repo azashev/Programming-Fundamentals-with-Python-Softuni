@@ -24,7 +24,7 @@ pairs = [
               "Mark Ronson - Uptown Funk ft. Bruno Mars: https://www.youtube.com/watch?v=OPf0YbXqDm0 "
               "Did this cheer you up?"]],
 
-    ["(no|nope|nah)", ["Oh, then you probably like a certain genre? Enter genre"
+    ["(no|nope|nah)", ["Oh, then you probably like a certain genre? Enter genre:"
                        "(Examples: dance, rock, jazz, dubstep, rnb, techno, country, heavy metal):"]],
 
     ["dance", ["Surprise: https://www.youtube.com/watch?v=ZDrlmlzY7cE\nDid this cheer you up?",
