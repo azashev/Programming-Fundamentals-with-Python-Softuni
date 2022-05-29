@@ -11,7 +11,8 @@ pairs = [
 
     ["(sad|not well|not ok|not okay|disappointed|dissappointed|disapointed|dissapointed|angry|drunk|bored)",
      ["I'm really sorry to hear that. Do you want me to send you a song to cheer you up? If you do, then please type "
-      "'song'. \nIf you want me to tell you a joke, or suggest a movie, then simply type 'joke' or 'movie'"]],
+      "'song'. \nIf you want me to tell joke, or suggest a movie, then simply type 'joke' or 'movie'"]],
+
 
     # songs
 
@@ -26,39 +27,44 @@ pairs = [
     ["(no|nope|nah)", ["Oh, then you probably like a certain genre? Enter genre"
                        "(Examples: dance, rock, jazz, dubstep, rnb, techno, country, heavy metal):"]],
 
-    ["dance", ["Surprise: https://www.youtube.com/watch?v=ZDrlmlzY7cE",
-               "Surprise: https://www.youtube.com/watch?v=UxxajLWwzqY"]],
+    ["dance", ["Surprise: https://www.youtube.com/watch?v=ZDrlmlzY7cE\nDid this cheer you up?",
+               "Surprise: https://www.youtube.com/watch?v=UxxajLWwzqY\nDid this cheer you up?"]],
 
-    ["rock", ["Surprise: https://www.youtube.com/watch?v=v2AC41dglnM",
-              "Surprise: https://www.youtube.com/watch?v=GgnClrx8N2k"]],
+    ["rock", ["Surprise: https://www.youtube.com/watch?v=v2AC41dglnM\nDid this cheer you up?",
+              "Surprise: https://www.youtube.com/watch?v=GgnClrx8N2k\nDid this cheer you up?"]],
 
-    ["jazz", ["Surprise: https://www.youtube.com/watch?v=ZEcqHA7dbwM",
-              "Surprise: https://www.youtube.com/watch?v=ylXk1LBvIqU"]],
+    ["jazz", ["Surprise: https://www.youtube.com/watch?v=ZEcqHA7dbwM\nDid this cheer you up?",
+              "Surprise: https://www.youtube.com/watch?v=ylXk1LBvIqU\nDid this cheer you up?"]],
 
-    ["dubstep", ["Surprise: https://www.youtube.com/watch?v=YJVmu6yttiw",
-                 "Surprise: https://www.youtube.com/watch?v=3Q9rewnLFYw"]],
+    ["dubstep", ["Surprise: https://www.youtube.com/watch?v=YJVmu6yttiw\nDid this cheer you up?",
+                 "Surprise: https://www.youtube.com/watch?v=3Q9rewnLFYw\nDid this cheer you up?"]],
 
-    ["(rnb|r&b|r nb|rn b|r n b)", ["Surprise: https://www.youtube.com/watch?v=3KL9mRus19o",
-                                   "Surprise: https://www.youtube.com/watch?v=U0CGsw6h60k"]],
+    ["(rnb|r&b|r nb|rn b|r n b)", ["Surprise: https://www.youtube.com/watch?v=3KL9mRus19o\nDid this cheer you up?",
+                                   "Surprise: https://www.youtube.com/watch?v=U0CGsw6h60k\nDid this cheer you up?"]],
 
-    ["(techno|tehno)", ["Surprise: https://www.youtube.com/watch?v=SnPWNOmd5dU",
-                        "Surprise: https://www.youtube.com/watch?v=5IrHzrg4qdQ"]],
+    ["(techno|tehno)", ["Surprise: https://www.youtube.com/watch?v=SnPWNOmd5dU\nDid this cheer you up?",
+                        "Surprise: https://www.youtube.com/watch?v=5IrHzrg4qdQ\nDid this cheer you up?"]],
 
-    ["country", ["Surprise: https://www.youtube.com/watch?v=1vrEljMfXYo",
-                 "Surprise: https://www.youtube.com/watch?v=sgJXbIP83A8"]],
+    ["country", ["Surprise: https://www.youtube.com/watch?v=1vrEljMfXYo\nDid this cheer you up?",
+                 "Surprise: https://www.youtube.com/watch?v=sgJXbIP83A8\nDid this cheer you up?"]],
 
-    ["(heavy metal|heavy-metal|heavy_metal)", ["Surprise: https://www.youtube.com/watch?v=S7blkui3nQc",
-                                               "Surprise: https://www.youtube.com/watch?v=AkFqg5wAuFk"]],
+    ["(heavy metal|heavy-metal|heavy_metal)", ["Surprise: https://www.youtube.com/watch?v=S7blkui3nQc\n"
+                                               "Did this cheer you up?",
+                                               "Surprise: https://www.youtube.com/watch?v=AkFqg5wAuFk\n"
+                                               "Did this cheer you up?"]],
 
     ["(yes|yeah|yep)", ["Nice! I'm glad I could help :)\nIf you want to exit the chat, type 'exit'"]],
+
 
     # jokes
 
     ["joke", ["What did one ocean say to the other ocean?\nNothing, it just waved.",
-              "What’s the difference between a hippo and a zippo?\nOne is really heavy and the other’s a little lighter.",
+              "What’s the difference between a hippo and a zippo?\nOne is really heavy and the other’s a little "
+              "lighter.",
               "What’s the best thing about Switzerland?\nI don’t know, but the flag is a big plus.",
-              "I’ve been trying to make a sarcastic club, but it’s been really hard to tell if people are interested in joining "
-              "or not."]],
+              "I’ve been trying to make a sarcastic club, but it’s been really hard to tell if people are interested in "
+              "joining or not."]],
+
 
     # movies
 
