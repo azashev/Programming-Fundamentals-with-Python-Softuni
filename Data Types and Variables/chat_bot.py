@@ -1,53 +1,87 @@
 from nltk.chat.util import Chat, reflections
 
 pairs = [
-    [
-        r"(.*)my name is (.*)",
-        ["Hello %2, How are you today ?"]
-    ],
-    [
-        r"(.*) your name ?",
-        ["My name is SoftUni BOT, but you can just call me robot and I'm a chatbot .", ]
-    ],
-    [
-        r'what is the phone number of the SoftUni(.*)?',
-        ['9:00 - 19:30 (Понеделник - Петък) \n8:30 - 18:00 (Събота и Неделя) \nТелефон: +359899 55 55 92 \nИмейл: '
-         'university@softuni.bg']
-    ],
-    [
-        r"what is python(.*) ?",
-        ["Python is an interpreted, object-oriented, high-level programming language with dynamic semantics"]
-    ],
+    [r"(hi|hey|hello|hola|holla|hallo|greetings|sup)(.*)", ["Hello", "Hey there", "Hey :)"]],
 
-    [
-        r"i'm (.*) (good|well|okay|ok)",
-        ["Nice to hear that, how can I help you?"]
-    ],
-    [
-        r"(hi|hey|hello|hola|holla)(.*)",
-        ["Hello", "Hey there", ]
-    ],
-    [
-        r"(.*)created(.*)",
-        ["Mario Zahariev created me using Python's NLTK library "]
-    ],
-    [
-        r"(.*) (location|city) ?",
-        ['Sofia, Bulgaria', ]
-    ],
-    [
-        r"quit",
-        ["Bye for now. See you soon :) ", "It was nice talking to you. See you soon :)"]
-    ],
-    [
-        r"(.*)",
-        ['That is nice to hear']
-    ],
+    ["my name is (.*)", ["Hello %1, how are you today?\n(happy, sad, angry etc.)"]],
+
+    ["(good|well|okay|ok|super|hyped|fantastic|perfect|perfekt)", ["Nice to hear "
+      "that! If you still want me to send you a song, tell a joke, or suggest a movie, then please enter 'song', "
+                                                                                                "'joke' or 'movie'"]],
+
+    ["(sad|not well|not ok|not okay|disappointed|dissappointed|disapointed|dissapointed|angry|drunk)",
+     ["I'm really sorry to hear that. Do you want me to send you a song to cheer you up? If you do, then please type "
+      "'song'. \nIf you want me to tell you a joke, or suggest a movie, then simply type 'joke' or 'movie'"]],
+
+    # songs
+
+    ["song", ["John Lennon - Imagine: https://www.youtube.com/watch?v=v27CEFE02Hs Did this cheer you up?",
+              "Katrina & The Waves - Walking On Sunshine: https://www.youtube.com/watch?v=iPUmE-tne5U "
+              "Did this cheer you up?",
+              "Katy Perry - Firework: https://www.youtube.com/watch?v=QGJuMBdaqIw Did this cheer you up?",
+              "Pharrell Williams - Happy: https://www.youtube.com/watch?v=ZbZSe6N_BXs Did this cheer you up?",
+              "Mark Ronson - Uptown Funk ft. Bruno Mars: https://www.youtube.com/watch?v=OPf0YbXqDm0 "
+              "Did this cheer you up?"]],
+
+    ["(no|nope|nah)", ["Oh, then you probably like a certain genre? Enter genre"
+                       "(Examples: dance, rock, jazz, dubstep, rnb, techno, country, heavy metal):"]],
+
+    ["dance", ["Surprise: https://www.youtube.com/watch?v=ZDrlmlzY7cE",
+               "Surprise: https://www.youtube.com/watch?v=UxxajLWwzqY"]],
+
+    ["rock", ["Surprise: https://www.youtube.com/watch?v=v2AC41dglnM",
+              "Surprise: https://www.youtube.com/watch?v=GgnClrx8N2k"]],
+
+    ["jazz", ["Surprise: https://www.youtube.com/watch?v=ZEcqHA7dbwM",
+              "Surprise: https://www.youtube.com/watch?v=ylXk1LBvIqU"]],
+
+    ["dubstep", ["Surprise: https://www.youtube.com/watch?v=YJVmu6yttiw",
+                 "Surprise: https://www.youtube.com/watch?v=3Q9rewnLFYw"]],
+
+    ["(rnb|r&b|r nb|rn b|r n b)", ["Surprise: https://www.youtube.com/watch?v=3KL9mRus19o",
+                                   "Surprise: https://www.youtube.com/watch?v=U0CGsw6h60k"]],
+
+    ["(techno|tehno)", ["Surprise: https://www.youtube.com/watch?v=SnPWNOmd5dU",
+                        "Surprise: https://www.youtube.com/watch?v=5IrHzrg4qdQ"]],
+
+    ["country", ["Surprise: https://www.youtube.com/watch?v=1vrEljMfXYo",
+                 "Surprise: https://www.youtube.com/watch?v=sgJXbIP83A8"]],
+
+    ["(heavy metal|heavy-metal|heavy_metal)", ["Surprise: https://www.youtube.com/watch?v=S7blkui3nQc",
+                                               "Surprise: https://www.youtube.com/watch?v=AkFqg5wAuFk"]],
+
+    ["(yes|yeah|yep)", ["Nice! I'm glad I could help :)\nIf you want to exit the chat, type 'exit'"]],
+
+    # jokes
+
+    ["joke", ["What did one ocean say to the other ocean?\nNothing, it just waved.",
+              "What’s the difference between a hippo and a zippo?\nOne is really heavy and the other’s a little lighter.",
+              "What’s the best thing about Switzerland?\nI don’t know, but the flag is a big plus.",
+              "I’ve been trying to make a sarcastic club, but it’s been really hard to tell if people are interested in joining "
+              "or not."]],
+
+    # movies
+
+    ["movie", ["Action: https://www.imdb.com/title/tt7888964",
+               "Drama: https://www.imdb.com/title/tt1798709",
+               "Horror: https://www.imdb.com/title/tt4160708",
+               "Sci-fi: https://www.imdb.com/title/tt0470752",
+               "Comedy: https://www.imdb.com/title/tt1411697",
+               "Documentary: https://www.imdb.com/title/tt11464826"]],
+
+    [r"(.*) your name?", ['My name is Robo']],
+
+    [r"(.*)", ["Sorry, I'm not trained to answer this question. Please try with something else."]],
+
+    ["quit|exit|bye|cya|bb", ["I hope I was able to cheer you up. Bye for now hooman :) it was nice talking to you.",
+                              "I hope I could help. Bye for now and have a nice day!",
+                              "Hopefully, you feel better! Bye and stay safe :)"]],
+
 ]
 
 # default message at the start of chat
-print("Please type lowercase English language to start a conversation. "
-      "Type quit to leave.\n\nHi, I'm SoftUni BOT...\nWhat is your name?")
+print("\nPlease type in English."
+      "Type quit to leave the chat.\n\nHi, I'm Robo :)\nWhat is your name? (please start with 'my name is ...')")
 
 # Create Chat Bot
 chat = Chat(pairs, reflections)
