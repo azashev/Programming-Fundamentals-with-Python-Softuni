@@ -71,11 +71,11 @@ pairs = [
 
     [r"(.*) your name?", ['My name is Robo']],
 
-    [r"(.*)", ["Sorry, I'm not trained to answer this question. Please try with something else."]],
-
-    ["quit|exit|bye|cya|bb", ["I hope I was able to cheer you up. Bye for now hooman :) it was nice talking to you.",
+    [r"quit", ["I hope I was able to cheer you up. Bye for now hooman :) it was nice talking to you.",
                               "I hope I could help. Bye for now and have a nice day!",
                               "Hopefully, you feel better! Bye and stay safe :)"]],
+
+    [r"(.*)", ["Sorry, I'm not trained to answer this question. Please try with something else."]],
 
 ]
 
