@@ -18,4 +18,5 @@ print(positives)
 print(negatives)
 
 print(f"Count of positives: {len(positives)}")
-print(f"Count of negatives: {sum_negatives}")
+#print(f"Count of negatives: {sum_negatives}")
+print(f"Count of negatives: {sum(negatives)}")
