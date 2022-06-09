@@ -1,7 +1,7 @@
 string = input().split()
 shuffles = int(input())
 
-for shuffles in range(shuffles):
+for shuffle in range(shuffles):
     left_half = string[:(len(string) // 2):]
     right_half = string[(len(string) // 2)::]
     current_list = []
