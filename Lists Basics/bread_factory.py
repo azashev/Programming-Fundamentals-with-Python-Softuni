@@ -6,9 +6,9 @@ coins = 100
 events_handled = True
 
 for event in events:
-    event = event.split("-")
-    current_event = event[0]
-    value = int(event[1])
+    event_type = event.split("-")
+    current_event = event_type[0]
+    value = int(event_type[1])
 
     if current_event == "rest":
         if energy == 100:
@@ -32,8 +32,6 @@ for event in events:
             print(f"You earned {value} coins.")
         else:
             energy += 50
-            if energy > 100:
-                energy = 100
             print("You had to rest!")
     else:
         if coins >= value:
