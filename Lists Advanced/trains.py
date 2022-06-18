@@ -1,6 +1,6 @@
 number = int(input())
 
-wagons = [0 for x in range(number)]
+wagons = [0] * number
 command = input()
 
 while command != "End":
