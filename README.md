@@ -1,2 +1,2 @@
-# Programming-Fundamentals-With-Python-SoftUni
+# Programming Fundamentals With Python - SoftUni
  
