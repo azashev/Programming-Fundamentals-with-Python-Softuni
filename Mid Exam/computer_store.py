@@ -1,3 +1,11 @@
+# Write a program that prints you a receipt for your new computer. You will receive the parts' prices (without tax)
+# until you receive what type of customer this is - special or regular. Once you receive the type of customer, print the receipt
+
+# The taxes are 20% of each part's price you receive
+# If the customer is special, he has a 10% discount on the total price with taxes
+# If a given price is not a positive number, then print "Invalid price!" and continue with the next price
+# If the total price is equal to zero, print "Invalid order!"
+
 price = input()
 
 total_price_no_tax = 0
