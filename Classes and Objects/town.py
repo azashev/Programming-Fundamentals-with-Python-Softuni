@@ -7,10 +7,10 @@
 # "Town: {name} | Latitude: {latitude} | Longitude: {longitude}"
 
 class Town:
-    def __init__(self, name):
+    def __init__(self, name, latitude="0°N", longitude="0°E"):
         self.name = name
-        self.latitude = "0°N"
-        self.longitude = "0°E"
+        self.latitude = latitude
+        self.longitude = longitude
 
     def set_latitude(self, latitude):
         self.latitude = latitude

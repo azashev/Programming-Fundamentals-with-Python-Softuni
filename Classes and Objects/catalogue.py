@@ -18,10 +18,10 @@ class Catalogue:
         self.name = name
         self.products = []
 
-    def add_product(self, product_name: str):
+    def add_product(self, product_name):
         self.products.append(product_name)
 
-    def get_by_letter(self, first_letter: str):
+    def get_by_letter(self, first_letter):
         return [product for product in self.products if product.startswith(first_letter)]
 
     def __repr__(self):

@@ -16,7 +16,7 @@ class Class:
         self.students = []
         self.grades = []
 
-    def add_student(self, name: str, grade: float):
+    def add_student(self, name, grade):
         if Class.__students_count > len(self.students):
             self.students.append(name)
             self.grades.append(grade)
