@@ -22,8 +22,8 @@ class Class:
             self.grades.append(grade)
 
     def get_average_grade(self):
+        # return f"{(sum(self.grades) / len(self.grades)):.2f}"
         avg = sum(self.grades) / len(self.grades)
-        #return f"{(sum(self.grades) / len(self.grades)):.2f}"
         return round(avg, 2)
 
     def __repr__(self):

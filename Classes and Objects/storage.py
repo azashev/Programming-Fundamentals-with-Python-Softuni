@@ -6,16 +6,18 @@
 # •	get_products() - returns the storage list
 
 class Storage:
+    storage = []
+
     def __init__(self, capacity):
         self.capacity = capacity
-        self.storage = []
 
     def add_product(self, product: str):
-        if len(self.storage) < self.capacity:
+        if self.capacity > 0:
             self.storage.append(product)
+            self.capacity -= 1
 
     def get_products(self):
-        return self.storage
+        return Storage.storage
 
 
 storage = Storage(4)
