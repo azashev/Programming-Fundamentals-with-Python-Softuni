@@ -7,10 +7,17 @@ elements = input().split()
 
 bakery = {}
 
-for x in range(0, len(elements), 2):
-    food = elements[x]
-    quantity = int(elements[x + 1])
+# for loop solution
+# for x in range(0, len(elements), 2):
+    # food = elements[x]
+    # quantity = int(elements[x + 1])
+    #
+    # bakery[food] = quantity
 
-    bakery[food] = quantity
+    #
+    # bakery[elements[x]] = int(elements[x])
+
+# comprehension
+bakery_dict = {elements[i]: int(elements[i + 1]) for i in range(0, len(elements), 2)}
 
 print(bakery)
