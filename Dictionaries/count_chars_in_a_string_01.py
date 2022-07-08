@@ -7,9 +7,11 @@ my_dict = {}
 
 for char in words:
     if char not in my_dict:
-        my_dict[char] = 1
-    else:
-        my_dict[char] += 1
+        my_dict[char] = 0
+    my_dict[char] += 1
+
+    #else:
+    #    my_dict[char] += 1
 
 for word, value in my_dict.items():
     print(f"{word} -> {value}")
