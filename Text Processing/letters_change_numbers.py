@@ -1,11 +1,11 @@
 # Receive a string consisting of a number between two letters.
 # For the given string, you should perform different mathematical operations to achieve a result:
 
-# •	First, if the letter in front of the number is:
+# • First, if the letter in front of the number is:
 #   - Uppercase: divide the number by the letter's position in the alphabet (starting from 1)
 #   - Lowercase: multiply the number with the letter's position in the alphabet (starting from 1)
 
-# •	Next, if the letter after the number is:
+# • Next, if the letter after the number is:
 #   - Uppercase: subtract its position from the resulting number (starting from 1)
 #   - Lowercase: add its position to the resulting number (starting from 1)
 
@@ -13,18 +13,18 @@
 
 
 # Input:
-# •	The input comes from the console as a single line, holding a sequence of strings
-# •	Strings are separated by one or more white spaces
-# •	The input data will always be valid. There is no need to check it explicitly
+# • The input comes from the console as a single line, holding a sequence of strings
+# • Strings are separated by one or more white spaces
+# • The input data will always be valid. There is no need to check it explicitly
 
 # Output:
-# •	Print at the console a single number:
+# • Print at the console a single number:
 #   - The total sum of all processed numbers, formatted to the second decimal separator
 
 # Constraints:
-# •	The count of the strings will be in the range [1 … 10]
-# •	The numbers between the letters will be integers in the range [1 … 2 147 483 647]
-# •	Time limit: 0.3 sec. Memory limit: 16 MB
+# • The count of the strings will be in the range [1 … 10]
+# • The numbers between the letters will be integers in the range [1 … 2 147 483 647]
+# • Time limit: 0.3 sec. Memory limit: 16 MB
 
 
 def position_in_alphabet(char):
