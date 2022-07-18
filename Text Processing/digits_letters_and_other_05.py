@@ -1,3 +1,10 @@
+# Write a program that receives a single string.
+# On the first line, print all the digits found in the string.
+# On the second line, print all the letters.
+# On the third line, print all the other characters.
+
+# There will always be at least one digit, one letter, and one other character.
+
 def digits(string):
     result = ""
     for ch in string:
