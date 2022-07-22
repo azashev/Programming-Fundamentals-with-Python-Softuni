@@ -13,6 +13,8 @@ import re
 
 some_text = input()
 
+# First solution
+
 pattern = r"(?P<day>\d{2})(?P<sep>[./-])(?P<month>[A-Z][a-z]{2})\2(?P<year>\d{4})"
 
 matches = re.finditer(pattern, some_text)
@@ -23,3 +25,11 @@ for match in matches:
     year = match.group("year")
 
     print(f"Day: {day}, Month: {month}, Year: {year}")
+
+
+# Second solution:
+
+# matches = re.findall(pattern, some_text)
+#
+# for match in matches:
+#     print(f"Day: {match[0]}, Month: {match[2]}, Year: {match[3]}")
