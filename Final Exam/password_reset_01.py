@@ -27,7 +27,7 @@ while True:
             index = int(command[1])
             length = int(command[2])
 
-            if index + length <= len(new_password):
+            if index + length < len(new_password):
                 substring_to_remove = new_password[index:index + length]
                 if substring_to_remove in new_password:
                     new_password = new_password.replace(substring_to_remove, "", 1)
