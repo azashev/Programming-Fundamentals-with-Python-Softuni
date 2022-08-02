@@ -1,0 +1,52 @@
+n = int(input())
+
+plants = {}
+
+for _ in range(n):
+    plant, rarity = input().split("<->")
+    rarity = int(rarity)
+
+    plants[plant] = {"rarity": rarity, "ratings": []}
+
+while True:
+    command_input = input()
+    if command_input == "Exhibition":
+        break
+
+    current_command = command_input.split(": ")
+
+    if current_command[0] == "Rate":
+        plant, rating = current_command[1].split(" - ")
+        if plant in plants:
+            rating = int(rating)
+            plants[plant]["ratings"].append(rating)
+        else:
+            print("error")
+            continue
+
+    elif current_command[0] == "Update":
+        plant, rarity = current_command[1].split(" - ")
+        if plant in plants:
+            rarity = int(rarity)
+
+            plants[plant]["rarity"] = rarity
+        else:
+            print("error")
+            continue
+
+    elif current_command[0] == "Reset":
+        plant = current_command[1]
+
+        if plant in plants:
+            plants[plant]["ratings"] = []
+        else:
+            print("error")
+            continue
+
+print("Plants for the exhibition:")
+for key, value in plants.items():
+    if plants[key]['ratings']:
+        plants[key]['average_rating'] = sum(value['ratings']) / len(value['ratings'])
+    else:
+        plants[key]["average_rating"] = 0
+    print(f"- {key}; Rarity: {value['rarity']}; Rating: {value['average_rating']:.2f}")
