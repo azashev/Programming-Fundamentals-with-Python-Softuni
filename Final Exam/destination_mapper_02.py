@@ -21,24 +21,27 @@ print(f"Destinations: {', '.join(valid_locations)}")
 print(f"Travel Points: {points}")
 
 
-# On the first line, you will be given a string containing all of your stops.
-# Until you receive the command "Travel", you will be given some commands to manipulate that initial string.
+# You will be given a string representing some places on the map. You have to filter only the valid ones.
+# A valid location is:
+# • Surrounded by "=" or "/" on both sides (the first and the last symbols must match).
+# • After the first "=" or "/" there should be only letters (the first must be upper-case, other letters could be upper
+# or lower-case).
+# • The letters must be at least 3.
 #
-# The commands can be:
-# • "Add Stop:{index}:{string}":
-#   - Insert the given string at that index only if the index is valid
-# • "Remove Stop:{start_index}:{end_index}":
-#   - Remove the elements of the string from the starting index to the end index (inclusive) if both indices are valid
-# • "Switch:{old_string}:{new_string}":
-#   - If the old string is in the initial string, replace it with the new one (all occurrences)
+# Example: In the string "=Hawai=/Cyprus/=Invalid/invalid==i5valid=/I5valid/=i=" only the first two locations are valid.
 #
-# Note: After each command, print the current state of the string if it is valid!
+# After you have matched all the valid locations, you have to calculate travel points.
+# They are calculated by summing the lengths of all the valid destinations that you have found on the map.
 #
-# After the "Travel" command, print the following: "Ready for world tour! Planned stops: {string}"
+#
+# In the end, on the first line, print: "Destinations: {destinations joined by ', '}".
+#
+# On the second line, print "Travel Points: {travel_points}".
+#
 #
 # Input / Constraints:
-# • JavaScript: you will receive a list of strings
-# • An index is valid if it is between the first and the last element index (inclusive) (0 ….. Nth) in the sequence.
+# • You will receive a string representing the locations on the map
+# • JavaScript: you will receive a single parameter: string
 #
 # Output:
-# Print the proper output messages in the proper cases as described in the problem description
+# • Print the messages described above
